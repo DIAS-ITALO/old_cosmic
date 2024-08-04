@@ -1,0 +1,526 @@
+@font-face {
+    font-family: 'Made';
+    src: url('../font/made-sunflower.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Catchye';
+    src: url('../font/catchye.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background: linear-gradient(
+        180deg,
+        rgb(95, 53, 107) 0%,
+        rgb(84.78, 46.12, 100.91) 30.7%,
+        rgb(76.8, 40.75, 96.15) 51.04%,
+        rgb(60, 29.44, 86.13) 72.32%,
+        rgb(43, 18, 76) 100%
+        );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-bar {
+    height: 100%;
+    width: 100px;
+
+}
+
+.nav-box{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+
+
+.nav-config{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.nav-main{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-main .btn {
+    width: 54px;
+    height: 54px;
+}
+
+.btn-sobre {
+    width: 50px;
+    height: 50px;
+}
+
+.bloco-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5e88;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 5px rgb(31, 30, 30);
+}
+
+.bloco-logo a{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-config .btn {
+    height: 50px;
+    width: 50px;
+}
+
+.modal-form-comunidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149.6px;
+    height: 48px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.modal-form-categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149.6px;
+    height: 48px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.btn-criar-comunidade {
+    width: 149.6px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.btn-criar-categoria {
+    width: 149.6px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.main-content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 8px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.main-content h3{
+    font-size: 19.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.92px;
+    font-family: Made;
+}
+
+.barra-topo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barra-topo h1{
+    font-family: Made;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.barra-topo .campo-pesquisa {
+    padding: 8px 24px;
+    width: 762.4px;
+    border-radius: 24px;
+    background-color: rgba(95, 53, 107, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-topo div {
+    padding: 8px 24px;
+    width: 700px;
+    border-radius: 24px;
+    background-color: rgba(95, 53, 107, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-topo div h2 {
+    font-family: Catchye;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 4px;
+}
+
+.btn-perfil {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-lupa {
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.caixa-categorias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-categorias h3{
+    text-align: initial;
+    width: 90%;
+}
+
+.lista-categorias{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+}
+.categoria {
+    width: 184px;
+    height: 240px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-categoria {
+    width: 190px;
+    height: 120px;
+    border-radius: 24px 24px 0 0;
+}
+
+.conteudo-categoria {
+    background-color: #473264;
+    width: 184px;
+    height: 120px;
+    border-radius: 0 0 24px 24px;
+    padding: 20.8px 19.2px;
+}
+
+.conteudo-categoria p{
+    font-size: 20.8px;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: Made;
+}
+
+.img-comunidade {
+    width: 192px;
+    height: 136px;
+}
+
+.caixa-comunidades{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.caixa-comunidades h3{
+    text-align: initial;
+    width: 90%;
+}
+
+.lista-comunidades{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.comunidade {
+    background-color: #473264;
+    width: 208px;
+    height: 280px;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+}
+
+.conteudo-comunidade {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+
+}
+
+.conteudo-comunidade h4{
+    text-align: left;
+    width: 100%;
+    font-size: 16px;
+    font-family: Made;
+    font-weight: 400;
+    color: #FAFAFA;
+}
+
+.conteudo-comunidade h4 a{
+    text-decoration: none;
+    font-family: Made;
+    font-weight: 400;
+    color: #FAFAFA;
+}
+
+.conteudo-comunidade h4 a:hover{
+    text-decoration: underline;
+}
+
+.conteudo-comunidade p{
+    color: #FFFFFF;
+    letter-spacing: 4%;
+    font-family: Catchye;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.conteudo-comunidade button {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1.6px solid #fafafa;
+    width: 176px;
+    height: 30.4px;
+    border-radius: 8px;
+}
+
+.conteudo-comunidade button a{
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14.4px;
+    text-transform: uppercase;
+    font-family: Made;
+    font-weight: 400;
+    letter-spacing: 4.8%;
+}
+
+.conteudo-comunidade button a:hover{
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+
+dialog a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+dialog::backdrop {
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+}
+
+dialog {
+border: none;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 181.4px 0 ;
+    overflow: hidden;
+}
+
+
+dialog form {
+    width: 480px;
+    height: 341.6px;
+    border-radius: 24px;
+    background-color: #473264;
+    padding: 16px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+dialog form button {
+    width: 149.6px;
+    height: 48px;
+    flex-shrink: 0;
+    margin: 85.6px 149.2px 0px 149.2px;
+    color:  #F7F0F5;
+    font-family: Made;
+    font-size: 19.2px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.536px;
+    background-color: transparent;
+    border-radius: 20px;
+    border: 2.4px solid #FAFAFA;
+    cursor: pointer;
+}
+
+.fechar-form {
+    display: flex;
+    justify-content: end;
+}
+
+.btn-fechar {
+    width: 28px;
+    height: 28px;
+}
+
+
+
+.lista-campos {
+    padding: 4px 28px;
+
+}
+
+.lista-campos label{
+    padding: 0 19.2px;
+    color: #FFF;
+    font-family: Made;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.campo-form {
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.campo-form input{
+    height: 48px;
+    border: none;
+    border-radius: 16px;
+    padding: 8px 19.2px;
+    margin-bottom: 12px;
+    font-size: 14.4px;
+}
+
+.campo-form input:focus{
+    outline: none;
+}
+
+
+.campo-form input::placeholder{
+    color: #000;
+    font-family: Catchye;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+.campo-form select{
+    height: 48px;
+    border-radius: 16px;
+    padding: 8px 19.2px;
+    margin-bottom: 12px;
+    color: #000;
+    font-family: Catchye;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    border: none;
+}
+
+campo-form select:focus{
+    outline: none;
+}
+
+campo-form select:active{
+    outline: none;
+}
+
+.campo-form .input-descricao{
+    height: 160px;
+    border-radius: 16px;
+    padding: 16px 19.2px;
+    border: none;
+    font-size: 14.4px;
+    resize: none
+}
+
+.campo-form .input-descricao:focus{
+        outline: none;
+}
+
+.campo-form .input-descricao::placeholder{
+     color: #000;
+    font-family: Catchye;
+    font-size: 14.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+
+
+
+.oculta-moderador {
+    display: none;
+}
+
+

@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'Made';
+    src: url('../font/made-sunflower.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Catchye';
+    src: url('../font/catchye.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background: linear-gradient(
+        180deg,
+        rgb(95, 53, 107) 0%,
+        rgb(84.78, 46.12, 100.91) 30.7%,
+        rgb(76.8, 40.75, 96.15) 51.04%,
+        rgb(60, 29.44, 86.13) 72.32%,
+        rgb(43, 18, 76) 100%
+        );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-bar {
+    height: 100%;
+    width: 100px;
+
+}
+
+.nav-box{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+
+
+.nav-config{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.nav-main{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-main .btn {
+    width: 54px;
+    height: 54px;
+}
+
+.btn-sobre {
+    width: 50px;
+    height: 50px;
+}
+
+.bloco-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5e88;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 5px rgb(31, 30, 30);
+}
+
+.bloco-logo a{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-config .btn {
+    height: 50px;
+    width: 50px;
+}
+
+.modal-form-comunidade {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149.6px;
+    height: 48px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.modal-form-categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 149.6px;
+    height: 48px;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.btn-criar-comunidade {
+    width: 149.6px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.btn-criar-categoria {
+    width: 149.6px;
+    height: 48px;
+    cursor: pointer;
+}
+
+
+.main-content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding: 8px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.barra-topo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.barra-topo h1{
+    font-family: Made;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.barra-topo .campo-pesquisa {
+    padding: 8px 24px;
+    width: 762.4px;
+    border-radius: 24px;
+    background-color: rgba(95, 53, 107, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-topo div {
+    padding: 16px 24px;
+    width: 700px;
+    border-radius: 24px;
+    background-color: rgba(95, 53, 107, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.barra-topo div h2 {
+    font-family: Catchye;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 4px;
+}
+
+.btn-perfil {
+    width: 40px;
+    height: 40px;
+}
+
+.btn-lupa {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-sobre {
+    width: 50px;
+    height: 50px;
+}
+
+.bloco-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5e88;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 5px rgb(31, 30, 30);
+}
+
+.bloco-logo a{
+    height: 50px;
+    width: 50px;
+}
+
+.lista-comunidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.campo-comunidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1175px;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.btn-lapis {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-excluir {
+    width: 40px;
+    height: 40px;
+}
+
+.campo-comunidade input {
+    font-size: 20.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    font-family: Catchye;
+    width: 240px;
+    border: none;
+    background-color: transparent;
+}
+
+.campo-comunidade input:active {
+    outline: none;
+    border: none;
+}
+
+.campo-comunidade input:focus {
+    outline: none;
+    border: none;
+}
+
+.campo-comunidade select {
+    font-size: 20.8px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    font-family: Catchye;
+    width: 96px;
+    border: none;
+    background-color: transparent;
+}
+
+.campo-comunidade select:focus {
+    outline: none;
+    border: none;
+}
+
+.campo-comunidade select:active {
+    outline: none;
+    border: none;
+}
+
+
+
+.btn-salvar {
+    box-shadow: 0px 4px 4px 0px rgba(183, 147, 201, 0.50);
+    border-radius: 24px;
+    border: none;
+    background: var(--degrade, linear-gradient(180deg, #5F356B 0%, #552E65 30.7%, #4D2960 51.04%, #3C1D56 72.32%, #2B124C 100%));
+    width: 152px;
+    height: 48px;
+    color: #FAFAFA;
+    font-family: Made;
+    font-size: 25.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.28px;
+
+}
+
+.btn-salvar:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.btn-voltar {
+    background-color: transparent;
+    border-radius: 24px;
+    width: 152px;
+    height: 48px;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.voltar {
+    color: #222;
+    font-family: Made;
+    font-size: 25.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.96px;
+    text-decoration: none;
+}
+
+.btn-voltar:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ocultar {
+    display: none;
+}
+

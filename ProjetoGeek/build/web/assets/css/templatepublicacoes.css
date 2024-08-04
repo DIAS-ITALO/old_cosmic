@@ -1,0 +1,380 @@
+@font-face {
+    font-family: 'Made';
+    src: url('../font/made-sunflower.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Catchye';
+    src: url('../font/catchye.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+body{
+    background: linear-gradient(
+        180deg,
+        rgb(95, 53, 107) 0%,
+        rgb(84.78, 46.12, 100.91) 30.7%,
+        rgb(76.8, 40.75, 96.15) 51.04%,
+        rgb(60, 29.44, 86.13) 72.32%,
+        rgb(43, 18, 76) 100%
+        );
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px 15px 0px;
+    height: 100vh;
+    width: 100vw;
+}
+.nav-bar {
+    height: 100%;
+    width: 100px;
+
+}
+
+.nav-box{
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 140px;
+}
+
+
+
+.nav-config{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.nav-main{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.nav-main .btn {
+    width: 54px;
+    height: 54px;
+}
+
+.btn-sobre {
+    width: 50px;
+    height: 50px;
+}
+
+.bloco-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7d5e88;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    box-shadow: 2px 5px 5px rgb(31, 30, 30);
+}
+
+.bloco-logo a{
+    height: 50px;
+    width: 50px;
+}
+
+.nav-config .btn {
+    height: 50px;
+    width: 50px;
+}
+
+.main-content {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bloco-comunidade{
+    width: 996px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 8px;
+    gap: 8px;
+}
+
+.titulo-btn {
+    width: 656px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 280px;
+    left: 400px;
+}
+
+.titulo-btn h1{
+
+    font-family: Made;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.titulo-btn button{
+    width: 168px;
+    height: 48px;
+    color: #FAFAFA;
+    font-family: Made;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 24px;
+    border: none;
+    background: linear-gradient(180deg, #5F356B 0%, #552E65 30.7%, #4D2960 51.04%, #3C1D56 72.32%, #2B124C 100%);
+}
+
+.titulo-btn button a{
+    text-decoration: none;
+    color: #FAFAFA;
+}
+
+.titulo-btn button a:hover{
+    text-decoration: underline;
+}
+
+.estrutura-form-conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-descritivo {
+    display: flex;
+    flex-direction: column;
+    min-height: 300px;
+    max-height: 300px;
+    overflow-y:  auto;
+    width: 932px;
+    border-radius: 24px 24px 0 0;
+    background-color: #EEF1F4;
+    padding: 32px;
+    gap: 24px;
+}
+
+
+
+.conteudo-descritivo h3{
+    color: #000;
+    font-family: Made;
+    font-size: 25.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.lista-membros {
+    padding: 12px 40px;
+    width: 431.8px;
+    height: 100%;
+    background-color: #EEF1F4;
+    border-radius: 0 24px 24px 0;
+}
+
+.titulo-membros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+
+.titulo-membros h3{
+    color: #000;
+    font-family: Made;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 35px;
+}
+
+.adicionar-usuario {
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+}
+
+.adicionar {
+    width: 64px;
+    height: 64px;
+}
+
+.linha-membro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    padding: 14.4px;
+}
+
+.linha-membro p {
+    color: #000;
+    font-family: Catchye;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.linha-membro .perfil-membro {
+    width: 48px;
+    height: 48px;
+}
+
+.linha-membro .adicionar-usuario{
+    width: 24px;
+    height: 24px;
+}
+
+form .ocultar {
+    display: none;
+}
+
+.listapublicacoes {
+    background-color: #FAFAFA;
+    border-radius: 24px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.listapublicacoes p{
+    margin-left: 63px;
+    color: #000;
+    font-family: Catchye;
+    font-size: 17.6px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.024px;
+}
+
+.titulopublicacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.titulopublicacao .perfil-membro {
+    width: 48px;
+    height: 48px;
+}
+
+.perfil-pub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.perfil-pub h4 {
+    color: #000;
+    font-family: Made;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.8px;
+}
+
+
+.lapis {
+    width: 24px;
+    height: 24px;
+}
+
+form {
+    background-color: #EEF1F4;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    bottom: 22px;
+    left: 125.5px;
+    width: 932px;
+    height: 60px;
+    border-radius: 0 0 24px 24px;
+}
+
+form input{
+    width: 750px;
+    background-color: rgba(95, 53, 107, 0.25);
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+    padding: 0 36px;
+    color: #000;
+    font-family: Catchye;
+    font-size: 18.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+
+form input:focus{
+    outline: none;
+}
+
+
+form input::placeholder{
+    color: #000;
+    font-family: Catchye;
+    font-size: 18.4px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.92px;
+}
+
+form button{
+    background-color: transparent;
+    border: none;
+}
+
+.btn-upload {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-enviar {
+    width: 48px;
+    height: 48px;
+}

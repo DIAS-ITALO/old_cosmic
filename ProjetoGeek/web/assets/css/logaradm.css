@@ -1,0 +1,242 @@
+@font-face {
+    font-family: 'Made';
+    src: url('../font/made-sunflower.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Catchye';
+    src: url('../font/catchye.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: black;
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        rgb(95, 53, 107) 0%,
+        rgb(84.78, 46.12, 100.91) 30.7%,
+        rgb(76.8, 40.75, 96.15) 51.04%,
+        rgb(60, 29.44, 86.13) 72.32%,
+        rgb(43, 18, 76) 100%
+        );
+}
+
+.main-content {
+    position: absolute;
+    z-index: 2;
+    background: transparent;
+    top: 248px;
+    left: 160px;
+}
+
+.main-content h1 {
+    color: #5F356B;
+    text-align: center;
+    font-family: Made;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 11.2px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.group-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 24px;
+    background: rgba(95, 53, 107, 0.25);
+    width: 360px;
+    height: 52px;
+    padding: 0 36px;
+    gap: 20px;
+}
+
+.group-form input {
+    width: 100%;
+    color: #FAFAFA;
+    background-color: transparent;
+    border: none;
+    font-family: Catchye;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+}
+
+.group-form input::placeholder {
+    color: #FAFAFA;
+    background-color: transparent;
+    border: none;
+    font-family: Catchye;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.group-form input:focus {
+    outline: none;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+}
+
+
+
+.options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 16px;
+}
+
+.options a {
+    color: rgba(95, 53, 107, 0.40);
+    font-family: Catchye;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.div-lembrar-senha {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.div-lembrar-senha input {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 0;
+    border: 1px solid rgba(95, 53, 107, 0.25);
+}
+
+.div-lembrar-senha p {
+    color: rgba(95, 53, 107, 0.40);
+    font-family: Catchye;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    padding: 0;
+}
+
+.btn-login {
+    width: 160px;
+    height: 56px;
+    border-radius: 24px;
+    background: linear-gradient(98deg, rgba(95, 53, 107, 0.87) 2.88%, rgba(95, 53, 107, 0.93) 44.8%, rgba(71, 50, 100, 0.91) 87.25%, #473264 144.55%);
+    color: #FFF;
+    text-align: center;
+    font-family: Made;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.mensagem {
+    color:  #522B5B;
+    font-family: Catchye ;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cadastrar {
+    color:  #522B5B;
+    font-family: Catchye ;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.estrelas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 732.2px;
+    width: 742.2px;
+}
+
+.foguete {
+    position: absolute;
+    top: 160px;
+    right: 294px;
+    height: 153.6px;
+    width: 204px;
+    transform: rotate(6deg);
+}
+
+.lua {
+    position: absolute;
+    top: 80px;
+    right: 680px;
+    height: 60.8px;
+    width: 64px;
+
+}
+
+.inferior-esquerdo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 1528px;
+    height: 742.2px;
+}
+
+
+
+
+
+
